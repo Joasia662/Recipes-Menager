@@ -6,7 +6,7 @@ import { ReceipeDetailsComponent } from './components/shared/receipe-details/rec
 
 const routes: Routes = [
   {
-    path: 'receipe', component: MainPageComponent, children: [
+    path: 'receipe', children: [
       { path: 'add', component: ReceipeAddComponent },
       { path: 'details/:id', component: ReceipeDetailsComponent },
       { path: '**', redirectTo: 'add', pathMatch: 'full' }
