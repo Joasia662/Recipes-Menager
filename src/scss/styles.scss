@@ -2,3 +2,5 @@
 @import "basscss/css/basscss-important.css";
 @import "custom.scss";
 @import "general.scss";
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
