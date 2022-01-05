@@ -9,12 +9,12 @@ import { AuthorInfoComponent } from '../../shared/dialogs/author-info/author-inf
 })
 export class HeaderComponent implements OnInit {
 
-  constructor(  private dialog: MatDialog) { }
+  constructor(private dialog: MatDialog) { }
 
   ngOnInit(): void {
   }
 
-  onAuthorInfoClick(){
+  onAuthorInfoClick() {
     const dialogRef = this.dialog.open(AuthorInfoComponent);
   }
 
