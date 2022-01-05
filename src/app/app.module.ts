@@ -11,11 +11,12 @@ import { ReceipeAddComponent } from './components/shared/pages/receipe-add/recei
 import { AuthorInfoComponent } from './components/shared/dialogs/author-info/author-info.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+import { HttpClientModule } from '@angular/common/http';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDialogModule } from '@angular/material/dialog';
-import { HttpClientModule } from '@angular/common/http';
-import {MatListModule} from '@angular/material/list';
+import { MatListModule } from '@angular/material/list';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,7 +34,8 @@ import {MatListModule} from '@angular/material/list';
     MatIconModule,
     MatButtonModule,
     MatDialogModule,
-    HttpClientModule
+    HttpClientModule,
+    MatListModule
 
   ],
   providers: [],

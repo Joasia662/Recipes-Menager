@@ -11,16 +11,19 @@ export class ApiRequestsService {
   enviroment = environment;
   constructor(private http: HttpClient) { }
 
+  addRecipe(body: any) {
+    return this.http.post<IRecipe>(`${this.enviroment.api_url}${this.enviroment.api_id}/recipes`, body);
+  }
+
+  deleteRecipe(id: string) {
+    return this.http.delete(`${this.enviroment.api_url}${this.enviroment.api_id}/recipes/${id}`);
+  }
+
   getRecipes() {
     return this.http.get<IRecipe[]>(`${this.enviroment.api_url}${this.enviroment.api_id}/recipes`);
   }
 
   getRecipesById(id: string) {
     return this.http.get<IRecipe[]>(`${this.enviroment.api_url}${this.enviroment.api_id}/recipes/${id}`);
-  }
-
-  addRecipe(body: any) {
-    
-    return this.http.post<IRecipe>(`${this.enviroment.api_url}${this.enviroment.api_id}/recipes`,  body );
   }
 }
