@@ -27,8 +27,7 @@ export class RecipesListComponent implements OnInit {
         this.recepies = res;
         this.isLoading = false;
       },
-      error: ({ err }) => {
-      }
+      error: ({ err }) => {}
     });
   }
 
@@ -49,7 +48,6 @@ export class RecipesListComponent implements OnInit {
       next: res => {},
       error: ({ err }) => {}
     });
-
     this.getRecipes();
   }
 }

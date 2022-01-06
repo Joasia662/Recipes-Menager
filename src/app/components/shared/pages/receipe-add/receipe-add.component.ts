@@ -11,7 +11,16 @@ export class ReceipeAddComponent implements OnInit {
   constructor(private api: ApiRequestsService) { }
 
   ngOnInit(): void {
-    //this.addRecipe();
+    /*
+    this.addRecipe();
+    this.addRecipe();
+    this.addRecipe();
+    this.addRecipe();
+    this.addRecipe();
+    this.addRecipe();
+    this.addRecipe();
+    this.addRecipe();
+    */
   }
 
   addRecipe(){

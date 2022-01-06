@@ -1,7 +1,7 @@
-<div class="w-100 list main-color-background shadow ">
-    <span class="ml3">
+<div class="w-100 list main-color-background shadow">
+    <span>
         <mat-selection-list [multiple]="false">
-            <mat-list-option class="gray-2" >
+            <mat-list-option class="gray-2">
                 <span class="flex justify-start items-center white text-12" (click)="onAddNewClick()">
                     <mat-icon class="mr2">add_circle_outline</mat-icon>
                     <span class="text-16">
@@ -9,15 +9,15 @@
                     </span>
                 </span>
             </mat-list-option>
-            <br>
             <mat-list-option class="white text-16" *ngFor="let item of recepies" (click)="onDetailsClick(item._id)">
-                <span class="flex justify-between items-center">
-                    <span >{{item.name}}</span>
-                    <span>
+                <span class="flex justify-center items-center ml1">
+                    <span>{{item.name}}</span>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <span class="flex justify-center">
                         <button class="gray-3" mat-button (click)="onEditClick(item._id)">
                             <mat-icon>edit</mat-icon>
-                          </button>
-                          &nbsp;
+                        </button>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
                         <button class="gray-2" mat-button (click)="onDeleteClick(item._id)">
                             <mat-icon>delete</mat-icon>
                         </button>

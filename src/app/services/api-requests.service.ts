@@ -24,6 +24,6 @@ export class ApiRequestsService {
   }
 
   getRecipesById(id: string) {
-    return this.http.get<IRecipe[]>(`${this.enviroment.api_url}${this.enviroment.api_id}/recipes/${id}`);
+    return this.http.get<IRecipe>(`${this.enviroment.api_url}${this.enviroment.api_id}/recipes/${id}`);
   }
 }
