@@ -1,15 +1,10 @@
-
-# The application manage recipes. It allows users to create, edit, remove and list recipes.
-
-![image](https://user-images.githubusercontent.com/60195641/148314952-d6caf8d1-d766-4dcc-89e0-850fa2408561.png)
-App design elements are in <a href="https://github.com/Joasia662/Recipes-Menager/blob/main/web_design.pdf ">web_design.pdf </a>file
 # RecipesMenager
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.2.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.1.
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
 ## Code scaffolding
 
